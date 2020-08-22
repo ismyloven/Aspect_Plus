@@ -1,0 +1,42 @@
+{
+  "name": "oxygensite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.5.1",
+    "node-pipeline": "^1.0.2",
+    "normalize.css": "^8.0.1",
+    "readable-stream": "^3.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-watch": "^5.0.1",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "build": "npm run gulp && npm run webpack",
+    "watch": "gulp watch",
+    "gulp": "gulp",
+    "webpack": "webpack",
+    "webpack:w": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismyloven/Oxygensite.git"
+  },
+  "author": "Nail Ismailov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ismyloven/Oxygensite/issues"
+  },
+  "homepage": "https://github.com/ismyloven/Oxygensite#readme"
+}
