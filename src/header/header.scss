@@ -6,7 +6,7 @@
 /* Primary Style
 --------------------------------*/
 .main {
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
 
 
@@ -20,6 +20,10 @@ li{
   list-style-type: none;
 
 }
+
+
+/* ----------------------Header--------------------------------------*/
+
 /* Slider Style
 --------------------------------------*/
 .cd-slider {
@@ -68,9 +72,27 @@ li{
   opacity: 0;
   transition: transform .5s, opacity .5s;
   will-change: transform, opacity;
+  font-family: 'Montserrat', sans-serif;
 }
 
-
+.content_text{
+  font-size: 30px;
+  margin-top: -50px;
+  font-family: 'Montserrat', sans-serif;
+}
+.content_button{
+  font-size: 30px;
+  background-color: white;
+  border: none;
+  height: 45px;
+  margin-top: 20px;
+}
+.content_button--text{
+  font-size: 10px;
+  font-weight: bold;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+}
 .headerphone{
   text-decoration: none;
   color: white;
@@ -78,10 +100,30 @@ li{
   padding-right: 60px;
   font-weight: bold;
 }
+/* header bottommenu
+-------------------------------------*/
+
+.header_bottommenu{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 170px;
+  padding-left: 50px;
+}
+.header_bottommenu--text{
+  display: flex;
+  color: white;
+  padding-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.header_bottommenu--image{
+  padding-right: 10px;
+}
 /* Logo Style
 -------------------------------------*/
 .logo{
-padding-left: 60px;
+padding-left: 130px;
 }
 
 .headmenu{
@@ -309,6 +351,78 @@ nav {
 }
 
 .checkbox1:checked + label > .hamburger1 > .bar4 {
+  transform-origin: 5%;
+  transform: rotate(-45deg);
+  width: 41px;
+}
+
+
+
+/* HAMBURGER 2 */
+.checkbox2:checked + label > .hamburger1 > .bar1{
+  transform: rotate(45deg);
+  transform-origin: 5%;
+  width: 41px
+}
+
+.checkbox2:checked + label > .hamburger1 > .bar2 {
+  transform: translateX(-40px);
+  background-color: transparent;
+}
+
+.checkbox2:checked + label > .hamburger1 > .bar3 {
+  transform: translateX(40px);
+  background-color: transparent;
+}
+
+.checkbox2:checked + label > .hamburger1 > .bar4 {
+  transform-origin: 5%;
+  transform: rotate(-45deg);
+  width: 41px;
+}
+
+/* HAMBURGER 3 */
+.checkbox3:checked + label > .hamburger1 > .bar1{
+  transform: rotate(45deg);
+  transform-origin: 5%;
+  width: 41px
+}
+
+.checkbox3:checked + label > .hamburger1 > .bar2 {
+  transform: translateX(-40px);
+  background-color: transparent;
+}
+
+.checkbox3:checked + label > .hamburger1 > .bar3 {
+  transform: translateX(40px);
+  background-color: transparent;
+}
+
+.checkbox3:checked + label > .hamburger1 > .bar4 {
+  transform-origin: 5%;
+  transform: rotate(-45deg);
+  width: 41px;
+}
+
+
+/* HAMBURGER 4 */
+.checkbox4:checked + label > .hamburger1 > .bar1{
+  transform: rotate(45deg);
+  transform-origin: 5%;
+  width: 41px
+}
+
+.checkbox4:checked + label > .hamburger1 > .bar2 {
+  transform: translateX(-40px);
+  background-color: transparent;
+}
+
+.checkbox4:checked + label > .hamburger1 > .bar3 {
+  transform: translateX(40px);
+  background-color: transparent;
+}
+
+.checkbox4:checked + label > .hamburger1 > .bar4 {
   transform-origin: 5%;
   transform: rotate(-45deg);
   width: 41px;
