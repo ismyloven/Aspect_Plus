@@ -87,6 +87,14 @@ li{
   height: 45px;
   margin-top: 20px;
 }
+
+
+.content_button:hover {
+  background: rgba(0,0,0,0);
+  color: #3a7999;
+  box-shadow: inset 0 0 0 3px #3a7999;
+}
+
 .content_button--text{
   font-size: 10px;
   font-weight: bold;

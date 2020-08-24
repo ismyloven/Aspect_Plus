@@ -1,0 +1,90 @@
+
+.section{
+  display: flex;
+  margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+line-height: 24px;
+}
+
+
+
+.section_image{
+  width: 60%;
+  height: 700px;
+  padding-top: 30px;
+  padding-left: 250px;
+}
+
+// Боковое меню
+
+
+.accordion {
+  margin-left: -70px;
+  width: 300px;
+}
+
+.accordion-item {
+  margin-bottom: 2px;
+}
+.accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-item-header {
+  padding: 10px 15px 10px 35px;
+
+
+
+  position: relative;
+}
+
+
+.accordion-item-content {
+
+  display: none;
+  list-style-type: none;
+}
+
+.accordion-item.show > .accordion-item-content {
+  padding: 10px 15px;
+  display: block;
+}
+
+.accordion-item.show > ul.accordion-item-content {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+
+}
+
+.accordion-item.show > .accordion-item-header {
+
+  margin-bottom: 2px;
+}
+
+.accordion-item.show > .accordion-item-header::before {
+  transform: rotate(-90deg);
+}
+
+.accordion-item.show > .accordion-item-header::after {
+  transform: rotate(-90deg);
+  margin-top: -4px;
+  left: 10px;
+
+}
+
+li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.accordion_link:hover{
+  font-size:20px;
+  font-style: oblique;
+  font-weight: 500;
+  word-spacing: 7px;
+
+}

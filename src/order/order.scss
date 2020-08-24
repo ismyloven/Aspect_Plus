@@ -1,0 +1,50 @@
+.order{
+  display: flex;
+  margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 24px;
+}
+
+.order_image{
+  width: 75%;
+  height: 400px;
+}
+
+
+.order_form{
+  padding-top: 70px;
+}
+.form_header{
+  font-weight: bold;
+}
+.form_text{
+  padding-top: 30px;
+}
+.order_input{
+  padding-top: 20px;
+}
+.input_number{
+  border: none;
+
+}
+.order_input--line {
+  border-bottom: 1px solid black;
+}
+
+
+.order_input--button{
+  margin-top: 30px;
+  height: 40px;
+  width: 115px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.arrow{
+  width: 15px;
+  height: 15px;
+  padding-left: 5px;
+
+}

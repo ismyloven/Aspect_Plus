@@ -11,7 +11,7 @@ if (document.location.search.match(/type=embed/gi)) {
 
 
 
-// Слайдшоу в новостях. class-contentinfo
+// Слайдшоу
 
 (function () {
 
@@ -144,3 +144,67 @@ if (document.location.search.match(/type=embed/gi)) {
 	});
 
 })();
+
+
+
+// Меню
+
+var accordion = (function (element) {
+
+	var _getActiveItems = function (elements) { // функция для получения элементов с указанным классом
+		var items = [];
+		elements.forEach(function (item) {
+			if (item.classList.contains('show')) {
+				items.push(item);
+			}
+		});
+		return items;
+	};
+
+	return function () {
+		var _mainElement = {}, // .accordion
+			_items = {}, // .accordion-item
+			_contents = {}; // .accordion-item-content
+
+
+		var _actionClick = function (e) {
+				if (!e.target.classList.contains('accordion-item-header')) { // прекращаем выполнение функции если кликнули не по заголовку
+					return;
+				}
+				e.preventDefault();   // Отменям стандартное действие
+				// получаем необходимые данные
+				var header = e.target,
+					item = header.parentElement,
+					activeItems = _getActiveItems(_items);
+
+				if (!activeItems.length) { // добавляем класс show к элементу (в зависимости от выбранного заголовка)
+					item.classList.add('show');
+				} else {
+					// удаляем класс show
+					activeItems.forEach(function (activeItem) {
+						if (!activeItem.contains(item)) {
+							activeItem.classList.remove('show');
+						}
+					});
+					item.classList.toggle('show');
+				}
+			},
+			_setupListeners = function () {
+				// добавим к элементу аккордиона обработчик события click
+				_mainElement.addEventListener('click', _actionClick);
+			};
+
+		return {
+			init: function (element) {
+				_mainElement = (typeof element === 'string' ? document.querySelector(element) : element);
+				_items = _mainElement.querySelectorAll('.accordion-item');
+				_setupListeners();
+			}
+		}
+
+	}
+})();
+
+
+var accordion1 = accordion();
+accordion1.init('#accordion');
